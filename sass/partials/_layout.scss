@@ -1,0 +1,14 @@
+.navbar-item {
+  
+  &:hover {
+    color: $color-primary !important; 
+  }
+}
+
+.navbar-menu {
+  padding: 0;
+}
+
+.footer {
+  background-color: $color-white !important;
+}

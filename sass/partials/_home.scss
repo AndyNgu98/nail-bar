@@ -1,0 +1,11 @@
+.hero {
+  &__image {
+    width: 500px;
+    // margin-left: 2rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+.about {
+  background-color: $color-light-grey; 
+}

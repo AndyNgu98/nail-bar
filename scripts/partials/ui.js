@@ -1,7 +1,7 @@
 const toggleMenu = (burger, nav) => {
   burger.addEventListener('click', () => {
-      burger.classList.toggle('is-active')
-      nav.classList.toggle('is-active')
+    burger.classList.toggle('is-active')
+    nav.classList.toggle('is-active')
   })
 }
 

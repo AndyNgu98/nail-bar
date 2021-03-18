@@ -12823,26 +12823,51 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 html {
   scroll-behavior: smooth;
+  padding-top: 52px;
 }
 
-.hero {
-  padding: 5rem 20px;
-  background-image: url("https://bulma.io/images/placeholders/128x128.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@font-face {
+  font-family: "Hatolie";
+  src: url("/fonts/Hatolie.ttf") format("truetype");
+}
+
+.title {
+  color: #0a0a0a;
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+}
+
+.subtitle {
+  color: #8b8b8b;
+}
+
+.global-padding {
+  padding: 5rem 1.5rem 5rem 1.5rem;
+}
+
+.navbar-item:hover {
+  color: #FF6700 !important;
+}
+
+.navbar-menu {
+  padding: 0;
+}
+
+.footer {
+  background-color: #ffffff !important;
+}
+
+.hero__image {
+  width: 500px;
+  margin-bottom: 2.5rem;
 }
 
 .about {
-  background-color: grey;
-  padding: 8rem;
-}
-
-.services {
-  padding: 8rem;
-}
-
-#booking {
-  padding: 8rem;
+  background-color: #f6f6f6;
 }
 /*# sourceMappingURL=mystyles.css.map */

@@ -1,14 +1,21 @@
 @charset "utf-8";
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap');
+
 
 @font-face {
   font-family: "Hatolie";
   src: url("/fonts/Hatolie.ttf") format("truetype");
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .title {
+  font-family: "Poppins";
   color: $black;
   font-size: 2rem;
   @include breakpoint(tablet) {

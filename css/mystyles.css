@@ -1,6 +1,7 @@
 /*! bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600&family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
@@ -7763,35 +7764,149 @@ html {
   scroll-behavior: smooth;
   padding-top: 52px; }
 
+a {
+  color: #FF6700; }
+
 @font-face {
   font-family: "Hatolie";
   src: url("/fonts/Hatolie.ttf") format("truetype"); }
 
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+
 .title {
-  color: #0a0a0a;
-  font-size: 2rem; }
+  font-family: "Prata", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem !important; }
   @media only screen and (min-width: 768px) {
     .title {
       font-size: 2.2rem; } }
+  .title--white {
+    color: #ffffff; }
 
 .subtitle {
-  color: #8b8b8b; }
+  color: gray;
+  font-size: 1.125rem;
+  line-height: 1.5rem; }
+  .subtitle--white {
+    color: #ffffff;
+    opacity: 0.8; }
 
 .global-padding {
   padding: 5rem 1.5rem 5rem 1.5rem; }
 
-.navbar-item:hover {
-  color: #FF6700 !important; }
+.navbar-item {
+  color: #000000 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  .navbar-item:hover {
+    color: #FF6700 !important; }
 
 .navbar-menu {
   padding: 0; }
 
+.hero {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .hero__image {
+    width: 500px;
+    display: block;
+    margin: auto;
+    padding: 3.5rem 0; }
+  .hero__home {
+    background-image: url("/images/home-hero.jpg"); }
+  .hero__pricing {
+    background-image: url("/images/pricing-hero.jpg");
+    height: 30vh; }
+    @media only screen and (min-width: 1024px) {
+      .hero__pricing {
+        height: 45vh; } }
+
+i {
+  color: #FF6700;
+  margin-right: 5px; }
+
+a .fa-facebook-official {
+  color: #3B5998; }
+
+a .fa-instagram {
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
+
 .footer {
   background-color: #ffffff !important; }
+  .footer__link {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #000000; }
+    .footer__link:hover {
+      color: #FF6700; }
 
-.hero__image {
-  width: 500px;
-  margin-bottom: 2.5rem; }
+hr {
+  border: 0;
+  height: 6px;
+  width: 120px;
+  position: relative;
+  margin: 0 auto 50px;
+  background: #FF6700; }
+
+.button.is-link {
+  background-color: #FF6700;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s; }
+  .button.is-link:hover {
+    background-color: #ff8533; }
+
+.pricing__header {
+  padding-top: 6rem; }
+
+.pricing__column {
+  margin-bottom: 1rem; }
+  @media only screen and (min-width: 768px) {
+    .pricing__column {
+      padding: 2rem; } }
+
+.pricing__title {
+  padding-left: 12px;
+  font-size: 2rem; }
+
+.pricing__name {
+  color: #666666; }
+
+.pricing__price {
+  color: #FF6700; }
+
+tbody {
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
+  border-collapse: collapse; }
+
+table td {
+  padding: 0.75rem 0.75em !important; }
+
+.column {
+  display: flex;
+  flex-direction: column; }
 
 .about {
-  background-color: #f6f6f6; }
+  background-color: #f9f9f9; }
+
+.card-content {
+  min-height: 275px;
+  background-color: #f9f9f9;
+  color: gray; }

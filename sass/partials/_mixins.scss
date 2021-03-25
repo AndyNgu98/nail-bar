@@ -6,8 +6,21 @@
   @if $breakpoint == fullhd { @media only screen and (min-width: 1408px) {@content}; }
 }
 
-%background-center {
+@mixin transition() {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+@mixin background-center() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+}
+
+@mixin sans-serif-font() {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }

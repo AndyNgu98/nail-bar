@@ -1,8 +1,8 @@
 const renderService = (selector, data) => {
   const html = `
   <tbody>
-      <td>${data.name}</td>
-      <td>${data.price}</td>
+    <td class="pricing__name">${data.name}</td>
+    <td align="right" class="pricing__price">${data.price}</td>
   </tbody>
   `
   selector.insertAdjacentHTML('afterbegin', html);

@@ -8,9 +8,23 @@ $color-primary: #FF6700;
 $color-light-grey: #f6f6f6;
 $color-medium-grey: #8b8b8b;
 $color-white: #ffffff;
+$color-black: #000000;
+
+// Grayscale
+$color-black-2: darken(#fff, 2.5%);
+$color-black-10: darken(#fff, 10%);
+$color-black-20: darken(#fff, 20%);
+$color-black-30: darken(#fff, 30%);
+$color-black-40: darken(#fff, 40%);
+$color-black-50: darken(#fff, 50%);
+$color-black-60: darken(#fff, 60%);
+$color-black-70: darken(#fff, 70%);
+$color-black-80: darken(#fff, 80%);
+$color-black-90: darken(#fff, 90%);
 
 // Bulma's global variables
-$family-sans-serif: "Nunito", sans-serif;
+$family-sans-serif: "Open Sans", sans-serif;
+// $body-family: "Open Sans", sans-serif;
 $primary: $color-primary;
 $body-color: $color-medium-grey;
 $link: $color-primary;
@@ -21,3 +35,7 @@ $fullhd-enabled: false;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+
+a {
+  color: $color-primary;
+}

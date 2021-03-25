@@ -1,11 +1,9 @@
-.hero {
-  &__image {
-    width: 500px;
-    // margin-left: 2rem;
-    margin-bottom: 2.5rem;
-  }
+.about {
+  background-color: $color-black-2; 
 }
 
-.about {
-  background-color: $color-light-grey; 
+.card-content {
+  min-height: 275px;
+  background-color: $color-black-2;
+  color: $color-black-50;
 }

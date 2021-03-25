@@ -1,0 +1,42 @@
+.pricing {
+
+  &__header {
+    padding-top: 6rem;
+  }
+  
+  &__column {
+    margin-bottom: 1rem;
+    
+    @include breakpoint(tablet) {
+      padding: 2rem;
+    }
+  }
+
+  &__title {
+    padding-left: 12px;
+    font-size: 2rem;
+  }
+  
+  &__name {
+    color: $color-black-60;
+  }
+  
+  &__price {
+    color: $color-primary;
+  }
+}
+
+tbody {
+  border-bottom: 1px solid $color-black-10;
+  border-top: 1px solid $color-black-10;
+  border-collapse: collapse;
+}
+
+table td {
+  padding: 0.75rem 0.75em !important;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}

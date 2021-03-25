@@ -2,8 +2,9 @@
 
 // Import a Google Font
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600&family=Prata&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 @font-face {
   font-family: "Hatolie";
@@ -11,19 +12,30 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  @include sans-serif-font;
 }
 
 .title {
-  font-family: "Poppins";
-  color: $black;
+  font-family: "Prata", serif;
   font-size: 2rem;
+  margin-bottom: 1rem !important;
   @include breakpoint(tablet) {
     font-size: 2.2rem;
+  }
+
+  &--white {
+    color: $color-white;
   }
 }
 
 
 .subtitle {
-  color: $color-medium-grey;
+  color: $color-black-50;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  &--white {
+    color: $color-white;
+    opacity: 0.8;
+  }
 }

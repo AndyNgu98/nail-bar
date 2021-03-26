@@ -7883,7 +7883,8 @@ hr {
 
 .pricing__title {
   padding-left: 12px;
-  font-size: 2rem; }
+  font-size: 2rem;
+  line-height: 2.8rem; }
 
 .pricing__name {
   color: #666666; }

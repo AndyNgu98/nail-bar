@@ -13,6 +13,18 @@ button.addEventListener('click', () => {
     message: !validator.isEmpty(message.value),
   }
 
+  var data = {
+    service_id: 'Nail_Bar_56',
+    template_id: 'Nail_Bar_56_id',
+    user_id: 'user_4NUMa5XPsuZeIiv2dUbuh',
+    template_params: {
+      email: email.value,
+      message_html: message.value,
+      from_name: name.value,
+      phone: phone.value
+    }
+  }
+
   
 
   function allTrue(valid) {
@@ -41,15 +53,7 @@ button.addEventListener('click', () => {
       });
     }
 
-    var data = {
-      email: email.value,
-      message_html: message.value,
-      from_name: name.value,
-      phone: phone.value
-    };
-
-
-    sendEmail('.netlify/functions/server', data);
+    sendEmail('https://api.emailjs.com/api/v1.0/email/send', data);
 
   } else {
     console.log('incorrect form')

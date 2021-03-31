@@ -42,25 +42,22 @@ button.addEventListener('click', () => {
     }
 
     var data = {
-      service_id: 'Nail_Bar_56',
-      template_id: 'Nail_Bar_56_id',
-      user_id: 'user_4NUMa5XPsuZeIiv2dUbuh',
-      template_params: {
-        email: email.value,
-        message_html: message.value,
-        from_name: name.value,
-        phone: phone.value
-      }
+      email: email.value,
+      message_html: message.value,
+      from_name: name.value,
+      phone: phone.value
     };
 
-    sendEmail('https://api.emailjs.com/api/v1.0/email/send', data);
+    // sendEmail('https://api.emailjs.com/api/v1.0/email/send', data);
+    // sendEmail('https://us-central1-nail-bar-56.cloudfunctions.net/sendEmail', data);
+    sendEmail('.netlify/functions/index.js', data);
 
   } else {
     console.log('incorrect form')
   }
   
 
-  
+
 
   
 })

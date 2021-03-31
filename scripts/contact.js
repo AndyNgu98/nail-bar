@@ -48,6 +48,7 @@ button.addEventListener('click', () => {
       phone: phone.value
     };
 
+
     sendEmail('.netlify/functions/server', data);
 
   } else {

@@ -6,15 +6,20 @@ const {service_id, template_id, user_id} = process.env
 exports.handler = async (event, context, callback) => {
 
 
+  const {email, message_html, form_name, phone} = JSON.parse(event.body)
+
+  // console.log(event.body)
+
+
   var data = {
     service_id,
     template_id,
     user_id,
     template_params: {
-      email: 'event.body.email',
-      message_html: 'event.body.message_html',
-      from_name: 'event.body.from_name',
-      phone: 'event.body.phone'
+      email: email,
+      message_html: message_html,
+      from_name: form_name,
+      phone: phone
     }
   }
 
@@ -44,7 +49,6 @@ exports.handler = async (event, context, callback) => {
   
     callback(null, { 
       statusCode: 200, 
-       body: "Hello World" 
    });
 
   // const url = 'https://api.emailjs.com/api/v1.0/email/send';

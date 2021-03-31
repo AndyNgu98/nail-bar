@@ -48,8 +48,6 @@ button.addEventListener('click', () => {
       phone: phone.value
     };
 
-    // sendEmail('https://api.emailjs.com/api/v1.0/email/send', data);
-    // sendEmail('https://us-central1-nail-bar-56.cloudfunctions.net/sendEmail', data);
     sendEmail('.netlify/functions/server', data);
 
   } else {

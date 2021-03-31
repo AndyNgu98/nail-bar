@@ -6,18 +6,15 @@ const {service_id, template_id, user_id} = process.env
 exports.handler = async (event, context, callback) => {
 
 
-  console.log(event)
-  console.log(context)
-
   var data = {
     service_id,
     template_id,
     user_id,
     template_params: {
-      email: 'request.body.email',
-      message_html: 'request.body.message_html',
-      from_name: 'request.body.from_name',
-      phone: 'request.body.phone'
+      email: 'event.body.email',
+      message_html: 'event.body.message_html',
+      from_name: 'event.body.from_name',
+      phone: 'event.body.phone'
     }
   }
 
@@ -44,7 +41,6 @@ exports.handler = async (event, context, callback) => {
   //   console.error('Error:', error);
   // });
 
-  console.log(data)
   
     callback(null, { 
       statusCode: 200, 

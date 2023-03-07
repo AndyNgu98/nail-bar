@@ -33,11 +33,11 @@
   
   &__pricing {
     background-image: url('/images/hero__pricing.jpg');
-    // height: 30vh;
-
-    // @include breakpoint(desktop) {
-    //   height: 45vh;
-    // }
+    height: 30vh;
+    width: 100%;
+    @include breakpoint(desktop) {
+      height: 45vh;
+    }
   }
 }
 

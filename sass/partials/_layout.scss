@@ -32,12 +32,12 @@
   }
   
   &__pricing {
-    background-image: url('/images//hero__pricing.jpg');
-    height: 30vh;
+    background-image: url('/images/hero__pricing.jpg');
+    // height: 30vh;
 
-    @include breakpoint(desktop) {
-      height: 45vh;
-    }
+    // @include breakpoint(desktop) {
+    //   height: 45vh;
+    // }
   }
 }
 

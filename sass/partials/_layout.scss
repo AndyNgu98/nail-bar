@@ -17,8 +17,7 @@
 .hero {
   @include transition;
   @include background-center;
-width: 100%;
-background-color: red;
+
   &__image {
     width: 500px;
     display: block;
@@ -33,9 +32,9 @@ background-color: red;
   }
   
   &__pricing {
-    background-image: url('/images/hero__pricing.jpg');
+    background-image: url('../../images/hero__pricing.jpg');
     height: 30vh;
-    width: 100%;
+
     @include breakpoint(desktop) {
       height: 45vh;
     }

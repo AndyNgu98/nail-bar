@@ -17,7 +17,8 @@
 .hero {
   @include transition;
   @include background-center;
-
+width: 100%;
+background-color: red;
   &__image {
     width: 500px;
     display: block;

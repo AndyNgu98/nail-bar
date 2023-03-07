@@ -8,7 +8,6 @@ axios.get('https://nail-bar-56-default-rtdb.europe-west1.firebasedatabase.app/pr
 .then((res) => {
   res.data['-MW02tFnNhIHr1Wh566-'].map((treatment) => {
     const selector = document.querySelector(`.${treatment.key}`)
-    console.log(treatment)
     treatment.services.forEach(service => renderService(selector, service));
   })
 })

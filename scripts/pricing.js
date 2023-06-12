@@ -9,6 +9,8 @@ axios.get('https://nail-bar-56-default-rtdb.europe-west1.firebasedatabase.app/pr
   console.log(res.data)
   res.data['-MW02tFnNhIHr1Wh566-'].map((treatment) => {
     const selector = document.querySelector(`.${treatment.key}`)
+    console.log(selector, 'this is selector')
+    console.log(treatment.key)
     for (let index = treatment.services.length - 1; index >= 0; index--) {
       const service = treatment.services[index];
       renderService(selector, service)
